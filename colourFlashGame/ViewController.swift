@@ -28,6 +28,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colourViewYellow: UIView!
     
+    @IBAction func colourFlashButton(_ sender: UIButton) {
+        colors.shuffle()
+        updateColourViews()
+       
+    }
     
     
     override func viewDidLoad() {
